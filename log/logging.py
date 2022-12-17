@@ -25,3 +25,5 @@ def get_logger(name: str = None, log_path: str = "./log.log") -> logging.Logger:
     # add handler to logger
     logger.addHandler(file_handler)
     logger.addHandler(stream_handler)
+
+    return logger
